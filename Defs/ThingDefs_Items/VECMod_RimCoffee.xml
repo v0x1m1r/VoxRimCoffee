@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--                                                          -->
+	<!--                       DRINKSSSSSSS                       -->
+	<!--                                                          -->
+	
+	
+
+	<!--                        OVERCLOCK                         -->
+	<!--     not exactly sure how you overclock a pawn but eh     -->
+
+	<ThingDef ParentName="DrugBase">
+		<defName>VCEMod_RC_Overclock</defName>
+		<label>RimCoffee™ Overclock</label>
+		<description>"Power through fatigue. Work beyond limits." &#10;Effects:&#10; - Increases Global Work Speed&#10; - Enhances Carry Weight&#10; - Boosts Movement Speed&#10; - Accelerates Learning Rate&#10; A high-performance stimulant brew made from Pholiota, a rare fungus known for its potent energizing properties. Originally formulated for deep-space labor crews and high-intensity industrial zones, RimCoffee™ Overclocked quickly  found its way into the hands of ambitious colonists, daring researchers, and overworked factory workers alike.&#10; Some speculate that this formula is not entirely natural, with whispers of its origins tracing back to black-market suppliers and forgotten research labs. Whatever the truth may be, one thing is certain—drink it, and you’ll move like your life depends on it.</description>
+		<graphicData>
+			<texPath>Items/Drinks/RimCoffee/RimCoffeeOverclock</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		
+		<uiIconPath>Items/Drinks/RimCoffee/RimCoffeeOverclock/RimCoffeeOverclock_a</uiIconPath>
+		<uiIconScale>1.4</uiIconScale>
+		<possessionCount>2</possessionCount>
+		<thingCategories>
+			<li>VCEMod_Drinks</li>
+		</thingCategories>
+		<tickerType>Rare</tickerType>
+		<tradeability>Sellable</tradeability>
+		<rotatable>false</rotatable>
+		<stackLimit>25</stackLimit>
+		<statBases>
+			<DeteriorationRate>0</DeteriorationRate>
+			<MarketValue>25</MarketValue>
+			<Mass>0.3</Mass>
+			<Flammability>0</Flammability>
+			<Nutrition>0.07</Nutrition>
+		</statBases>
+		<ingestible>
+			<foodType>Fluid, Processed</foodType>
+			<joyKind>Chemical</joyKind>
+			<joy>0.16</joy>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<ingestSound>Ingest_Drink</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.18,0,0)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+						<ingestHoldUsesTable>false</ingestHoldUsesTable>
+
+			<ingestCommandString>Drink {0}</ingestCommandString>
+			<ingestReportString>Drinking {0}.</ingestReportString>
+			<!-- still got no idea how these things work but whatever -->
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VECMod_Overclock</hediffDef>
+					<severity>1</severity>
+					<toleranceChemical>VECMod_A_Pholiota</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VECMod_A_PholiotaTolerance</hediffDef>
+					<severity>0.016</severity>
+					<divideByBodySize>true</divideByBodySize>
+					<multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+				</li> 
+			</outcomeDoers>
+		</ingestible>
+		
+		<techLevel>Neolithic</techLevel>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>VECMod_A_Pholiota</chemical>
+				<addictiveness>0.005</addictiveness>
+				<teetotalerCanConsume>true</teetotalerCanConsume>
+				<minToleranceToAddict>0.25</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<listOrder>10</listOrder>
+			</li>
+		</comps>
+		
+		
+	</ThingDef>
+	<!-- Eureka Extract, haha funny im so funny omg -->
+	<ThingDef ParentName="DrugBase">
+		<defName>VCEMod_RC_EurekaExtract</defName>
+		<label>RimCoffee™ Eureka Extract</label>
+		<description>EUREEEKAAA!!!</description>
+
+		<graphicData>
+			<texPath>Items/Drinks/RimCoffee/RimCoffeeEurekaExtract</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<uiIconPath>Items/Drinks/RimCoffee/RimCoffeeEurekaExtract/RimCoffeeEurekaExtract_a</uiIconPath>
+		<uiIconScale>1.4</uiIconScale>
+		<possessionCount>2</possessionCount>
+		<thingCategories>
+			<li>VCEMod_Drinks</li>
+		</thingCategories>
+		<tickerType>Rare</tickerType>
+		<tradeability>Sellable</tradeability>
+		<rotatable>false</rotatable>
+		<stackLimit>25</stackLimit>
+		<statBases>
+			<DeteriorationRate>0</DeteriorationRate>
+			<MarketValue>25</MarketValue>
+			<Mass>0.3</Mass>
+			<Flammability>0</Flammability>
+			<Nutrition>0.07</Nutrition>
+		</statBases>
+		<ingestible>
+			<foodType>Fluid, Processed</foodType>
+			<joyKind>Chemical</joyKind>
+			<joy>0.16</joy>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<ingestSound>Ingest_Drink</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.18,0,0)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+						<ingestHoldUsesTable>false</ingestHoldUsesTable>
+
+			<ingestCommandString>Drink {0}</ingestCommandString>
+			<ingestReportString>Drinking {0}.</ingestReportString>
+			
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VECMod_Eureka</hediffDef>
+					<severity>1</severity>
+					<toleranceChemical>VECMod_A_Pholiota</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VECMod_A_PholiotaTolerance</hediffDef>
+					<severity>0.016</severity>
+					<divideByBodySize>true</divideByBodySize>
+					<multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+				</li> 
+			</outcomeDoers>
+		</ingestible>
+		
+		<techLevel>Industrial</techLevel>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>VECMod_A_Pholiota</chemical>
+				<addictiveness>0.005</addictiveness>
+				<teetotalerCanConsume>true</teetotalerCanConsume>
+				<minToleranceToAddict>0.25</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<listOrder>10</listOrder>
+			</li>
+		</comps>
+		
+		
+	</ThingDef>
+	
+	<!-- Ohh the Harmonyyyyyyyyyyyy-->
+
+	<ThingDef ParentName="DrugBase">
+		<defName>VCEMod_RC_Harmony</defName>
+		<label>RimCoffee™ Harmony</label>
+		<description>"Find balance. Embrace tranquility." &#10;Effects:&#10; - Provides a strong Mood Buff&#10; - Reduces Mental Break Risk&#10; - Enhances Social Interactions&#10; - Promotes Relaxation&#10; A carefully crafted infusion of Pholiota and Psychoid leaves, RimCoffee™ Harmony is designed to bring clarity and peace to the mind. Originally developed for high-stress environments and diplomatic negotiations, it has become a favorite among colonists seeking a moment of serenity.&#10; Many describe its effects as a gentle wave of calm washing over them, allowing for deeper conversations, focused work, and a rare sense of contentment in the unforgiving Rim.</description>
+		<graphicData>
+			<texPath>Items/Drinks/RimCoffee/RimCoffeeHarmony</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<uiIconPath>Items/Drinks/RimCoffee/RimCoffeeHarmony/RimCoffeeHarmony_a</uiIconPath>
+		<uiIconScale>1.4</uiIconScale>
+		<possessionCount>2</possessionCount>
+		<thingCategories>
+			<li>VCEMod_Drinks</li>
+		</thingCategories>
+		<tickerType>Rare</tickerType>
+		<tradeability>Sellable</tradeability>
+		<rotatable>false</rotatable>
+		<stackLimit>25</stackLimit>
+		<statBases>
+			<DeteriorationRate>0</DeteriorationRate>
+			<MarketValue>25</MarketValue>
+			<Mass>0.3</Mass>
+			<Flammability>0</Flammability>
+			<Nutrition>0.07</Nutrition>
+		</statBases>
+		<ingestible>
+			<foodType>Fluid, Processed</foodType>
+			<joyKind>Chemical</joyKind>
+			<joy>0.16</joy>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<ingestSound>Ingest_Drink</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.18,0,0)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+						<ingestHoldUsesTable>false</ingestHoldUsesTable>
+
+			<ingestCommandString>Drink {0}</ingestCommandString>
+			<ingestReportString>Drinking {0}.</ingestReportString>
+			
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VECMod_Harmony</hediffDef>
+					<severity>1</severity>
+					<toleranceChemical>VECMod_A_Pholiota</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VECMod_A_PholiotaTolerance</hediffDef>
+					<severity>0.016</severity>
+					<divideByBodySize>true</divideByBodySize>
+					<multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+				</li> 
+			</outcomeDoers>
+		</ingestible>
+		
+		<techLevel>Industrial</techLevel>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>VECMod_A_Pholiota</chemical>
+				<addictiveness>0.005</addictiveness>
+				<teetotalerCanConsume>true</teetotalerCanConsume>
+				<minToleranceToAddict>0.25</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<listOrder>10</listOrder>
+			</li>
+		</comps>
+		
+		
+	</ThingDef>
+
+	<!-- L4-C-K FURY, Das crazyyy -->
+
+	<ThingDef ParentName="DrugBase">
+		<defName>VCEMod_RC_L4CKF</defName>
+		<label>RimCoffee™ L4-C-K Fury</label>
+		<description>"Unleash aggression. Embrace the fury."&#10;Effects:&#10; - Moderately Enhances Combat Performance&#10; - Increases Movement Speed and Reflexes&#10; - Slightly Raises Pain Tolerance&#10; - Mildly Reduces Work Efficiency and Rest Recovery&#10;RimCoffee™ L4-C-K Fury is a combat stimulant blend designed for quick, decisive engagements, enhancing a fighter’s speed, precision, and resilience without the extreme downsides of its more unstable counterparts. Engineered as a tactical enhancer rather than a full combat overhaul, it provides heightened focus, sharper instincts, and a noticeable edge in close-quarters skirmishes.&#10;Users report a steady surge of energy, as if their reaction time sharpens and movements feel lighter, while pain fades just enough to keep them fighting longer. However, prolonged use gradually wears down stamina and efficiency, making rest and recovery increasingly vital.</description>
+		<graphicData>
+			<texPath>Items/Drinks/RimCoffee/RimCoffeeL4CKFury</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<uiIconPath>Items/Drinks/RimCoffee/RimCoffeeL4CKFury/RimCoffeeL4CKFury_a</uiIconPath>
+		<uiIconScale>1.4</uiIconScale>
+		<possessionCount>2</possessionCount>
+		<thingCategories>
+			<li>VCEMod_Drinks</li>
+		</thingCategories>
+		<tickerType>Rare</tickerType>
+		<tradeability>Sellable</tradeability>
+		<rotatable>false</rotatable>
+		<stackLimit>25</stackLimit>
+		<statBases>
+			<DeteriorationRate>0</DeteriorationRate>
+			<MarketValue>100</MarketValue>
+			<Mass>0.3</Mass>
+			<Flammability>0</Flammability>
+			<Nutrition>0.07</Nutrition>
+		</statBases>
+		<ingestible>
+			<foodType>Fluid, Processed</foodType>
+			<joyKind>Chemical</joyKind>
+			<joy>0.16</joy>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<ingestSound>Ingest_Drink</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.18,0,0)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+						<ingestHoldUsesTable>false</ingestHoldUsesTable>
+
+			<ingestCommandString>Drink {0}</ingestCommandString>
+			<ingestReportString>Drinking {0}.</ingestReportString>
+			
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VECMod_L4CKFury</hediffDef>
+					<severity>1</severity>
+					<toleranceChemical>VECMod_A_Pholiota</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VECMod_A_PholiotaTolerance</hediffDef>
+					<severity>0.016</severity>
+					<divideByBodySize>true</divideByBodySize>
+					<multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+				</li> 
+			</outcomeDoers>
+		</ingestible>
+		
+		<techLevel>Industrial</techLevel>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>VECMod_A_Pholiota</chemical>
+				<addictiveness>0.005</addictiveness>
+				<teetotalerCanConsume>true</teetotalerCanConsume>
+				<minToleranceToAddict>0.25</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<listOrder>10</listOrder>
+			</li>
+		</comps>
+		<tradeTags>
+		  <li>ExoticMisc</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!-- Prototype W.B-13, ovahpoward -->
+
+	<ThingDef ParentName="DrugBase">
+		<defName>VCEMod_RC_WB13A</defName>
+		<label>RimCoffee™ Prototype W.B-13</label>
+		<description>"Push limits. Transcend weakness."&#10;Effects:&#10; - Greatly enhances Combat Performance&#10; - Increases Movement Speed and Accuracy&#10; - Heightens Pain Tolerance to Extreme Levels&#10; - Severely Reduces Work Efficiency and Rest Recovery&#10;Designed as a military-grade prototype, RimCoffee™ Prototype W.B-13 is a volatile fusion of Pholiotox Compound-13 and specialized stimulants, formulated to push the body beyond its natural limitations. Originally tested for high-risk combat scenarios, this unstable brew grants users razor-sharp reflexes, unyielding endurance, and deadly precision—but at a price.&#10;Many describe the experience as a blazing surge of adrenaline, where pain becomes meaningless, movements become instinct, and the world slows to a crawl. However, prolonged use wrecks the body's ability to recover, leaving pawns dangerously overclocked and fatigued once the effects wear off.</description>
+		<graphicData>
+			<texPath>Items/Drinks/RimCoffee/RimCoffeePrototypeWB13</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<uiIconPath>Items/Drinks/RimCoffee/RimCoffeePrototypeWB13/RimCoffeePrototypeWB13_a</uiIconPath>
+		<uiIconScale>1.4</uiIconScale>
+		<possessionCount>2</possessionCount>
+		<thingCategories>
+			<li>VCEMod_Drinks</li>
+		</thingCategories>
+		<tickerType>Rare</tickerType>
+		<tradeability>Sellable</tradeability>
+		<rotatable>false</rotatable>
+		<stackLimit>25</stackLimit>
+		<statBases>
+			<DeteriorationRate>0</DeteriorationRate>
+			<MarketValue>125</MarketValue>
+			<Mass>0.3</Mass>
+			<Flammability>0</Flammability>
+			<Nutrition>0.07</Nutrition>
+		</statBases>
+		<ingestible>
+			<foodType>Fluid, Processed</foodType>
+			<joyKind>Chemical</joyKind>
+			<joy>0.16</joy>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<ingestSound>Ingest_Drink</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.18,0,0)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+						<ingestHoldUsesTable>false</ingestHoldUsesTable>
+
+			<ingestCommandString>Drink {0}</ingestCommandString>
+			<ingestReportString>Drinking {0}.</ingestReportString>
+			
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VECMod_PrototypeWB13A</hediffDef>
+					<severity>1</severity>
+					<toleranceChemical>VECMod_A_Pholiota</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VECMod_A_PholiotaTolerance</hediffDef>
+					<severity>0.016</severity>
+					<divideByBodySize>true</divideByBodySize>
+					<multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+				</li> 
+
+			</outcomeDoers>
+		</ingestible>
+		<techLevel>Industrial</techLevel>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>VECMod_A_Pholiota</chemical>
+				<addictiveness>0.005</addictiveness>
+				<teetotalerCanConsume>true</teetotalerCanConsume>
+				<minToleranceToAddict>0.25</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<listOrder>10</listOrder>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>RimCoffeeCombatProduction</li>
+		</researchPrerequisites>
+		<tradeTags>
+		  <li>ExoticMisc</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!--                                                          -->
+	<!--                  HEADIFS HERE DUMBASS                    -->
+	<!--                                                          -->
+	<HediffDef>
+		<defName>VECMod_Overclock</defName>
+		<label>Drank RimCoffee™ Overclock</label>
+		<labelNoun>feeling overclocked</labelNoun>
+		<description>Ahh now i can get to work.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>Drunk</stateEffecter>
+				<severityIndices>8</severityIndices>
+			</li>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-2</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+
+			<li>
+			<restFallFactor>0.5</restFallFactor>
+				<statOffsets>
+					<GlobalLearningFactor>0.10</GlobalLearningFactor>
+					<MoveSpeed>0.3</MoveSpeed>
+					<CarryingCapacity>20</CarryingCapacity>
+					<WorkSpeedGlobal>0.6</WorkSpeedGlobal>
+				</statOffsets>				
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>VECMod_Eureka</defName>
+		<label>EUREKAAA!!</label>
+		<labelNoun>feeling super smart</labelNoun>
+		<description>BRAIN HYPER FUNCTION!</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>Drunk</stateEffecter>
+				<severityIndices>8</severityIndices>
+			</li>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-2</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+
+			<li>
+			<restFallFactor>0.45</restFallFactor>
+				<statOffsets>
+					<GlobalLearningFactor>2</GlobalLearningFactor>
+					<ResearchSpeed>1.5</ResearchSpeed>
+					<MoveSpeed>0.3</MoveSpeed>
+				</statOffsets>				
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>VECMod_Harmony</defName>
+		<label>Drank RimCoffee™ Harmony</label>
+		<labelNoun>Oh the harmony</labelNoun>
+		<description>A soothing mental clarity sets in, easing stress and lifting the spirit.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>Drunk</stateEffecter>
+				<severityIndices>8</severityIndices>
+			</li>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-2</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+
+			<li>
+			<restFallFactor>0.45</restFallFactor>
+				<statOffsets>
+					<MoveSpeed>0.3</MoveSpeed>
+				</statOffsets>				
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>VECMod_L4CKFury</defName>
+		<label>L 4 A C K</label>
+		<labelNoun>I FEEL THE POWERR</labelNoun>
+		<description>A soothing mental clarity sets in, easing stress and lifting the spirit.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>Drunk</stateEffecter>
+				<severityIndices>8</severityIndices>
+			</li>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-2</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+
+			<li>
+			<restFallFactor>0.45</restFallFactor>
+				<statOffsets>
+					<MoveSpeed>0.3</MoveSpeed>
+					<ShootingAccuracyPawn>0.10</ShootingAccuracyPawn>
+					<MeleeDodgeChance>0.15</MeleeDodgeChance>
+					<AimingDelayFactor>-0.2</AimingDelayFactor>
+					<MeleeHitChance>0.15</MeleeHitChance>
+					<MeleeWeapon_DamageMultiplier>0.10</MeleeWeapon_DamageMultiplier>
+					<PainShockThreshold>0.15</PainShockThreshold>
+					<WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
+					<RestRateMultiplier>-0.1</RestRateMultiplier>
+				</statOffsets>				
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>VECMod_PrototypeWB13A</defName>
+		<label>Drank RimCoffee™ Prototype W.B-13</label>
+		<labelNoun>Oh the energy!</labelNoun>
+		<description>A soothing mental clarity sets in, easing stress and lifting the spirit.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>Drunk</stateEffecter>
+				<severityIndices>8</severityIndices>
+			</li>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-4</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+
+		</comps>
+		<stages>
+
+			<li>
+			<restFallFactor>0.45</restFallFactor>
+				<statOffsets>
+					<MoveSpeed>0.3</MoveSpeed>
+					<ShootingAccuracyPawn>0.45</ShootingAccuracyPawn>
+					<MeleeDodgeChance>0.45</MeleeDodgeChance>
+					<AimingDelayFactor>-0.4</AimingDelayFactor>
+					<MeleeHitChance>0.45</MeleeHitChance>
+					<MeleeWeapon_DamageMultiplier>0.35</MeleeWeapon_DamageMultiplier>
+					<PainShockThreshold>1</PainShockThreshold>
+					<WorkSpeedGlobal>-0.5</WorkSpeedGlobal>
+					<RestRateMultiplier>-0.5</RestRateMultiplier>
+				</statOffsets>				
+			</li>
+		</stages>
+		<hediffGivers>
+
+			<li Class="HediffGiver_RandomDrugEffect">
+				<hediff>ToxicBuildup</hediff>
+				<minSeverity>0.1</minSeverity>
+				<baseMtbDays>3600</baseMtbDays>
+				<partsToAffect>
+					<li>Kidney</li>
+				</partsToAffect>
+			</li>
+		</hediffGivers>
+	</HediffDef>
+	<!--                                                           -->
+	<!--                THOUGHTS, SUPERR IMPOORTANT                -->
+	<!--                                                           -->
+	<ThoughtDef>
+		<defName>VECMod_Overclock</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>VECMod_Overclock</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>Overclocked</label>
+				<description>This coffee is making me feel strong, not just energised. Like i could lift boulders as if they were feathers.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>VECMod_Eureka</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>VECMod_Eureka</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>EUREKA!</label>
+				<description>That coffee makes my brain tingle, everything is so clear, too clear.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>VECMod_Harmony</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>VECMod_Harmony</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>Harmony</label>
+				<description>I feel calm and at peace. Everything seems a little brighter.</description>
+				<baseMoodEffect>18</baseMoodEffect>
+			</li>
+
+		</stages>
+	</ThoughtDef>
+
+	<!-- CAF ADDICTIONNN -->
+
+	<ChemicalDef>
+		<defName>VECMod_A_Pholiota</defName>
+		<label>pholiota</label>
+		<addictionHediff>VECMod_A_PholiotaAddiction</addictionHediff>
+		<toleranceHediff>VECMod_A_PholiotaTolerance</toleranceHediff>
+		<onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
+		<geneToleranceBuildupFactorResist>0.5</geneToleranceBuildupFactorResist>
+		<geneToleranceBuildupFactorImmune>0</geneToleranceBuildupFactorImmune>
+	</ChemicalDef>
+
+	<NeedDef ParentName="DrugAddictionNeedBase">
+		<defName>VECMod_Chemical_A_Pholiota</defName>
+		<needClass>Need_Chemical</needClass>
+		<label>pholiota</label>
+		<description>Due to a dependence on Pholiota, this person must regularly consume it to avoid withdrawal symptoms.</description>
+		<listPriority>35</listPriority>
+	</NeedDef>
+
+	<HediffDef ParentName="DrugToleranceBase">
+		<defName>VECMod_A_PholiotaTolerance</defName>
+		<label>pholiota tolerance</label>
+		<description>A growing tolerance to Pholiota. The stronger this tolerance becomes, the more is needed to achieve the same effect.</description>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.016</severityPerDay>
+			</li>
+			<li Class="HediffCompProperties_DrugEffectFactor">
+				<chemical>VECMod_A_Pholiota</chemical>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="AddictionBase">
+		<defName>VECMod_A_PholiotaAddiction</defName>
+		<label>pholiota addiction</label>
+		<description>A chemical addiction to Pholiota. Prolonged use has altered brain chemistry, making it difficult to function without it.&#10;Without regular intake, withdrawal symptoms will set in. However, after a long enough break, the brain will eventually readjust to normal function.</description>
+		<hediffClass>Hediff_Addiction</hediffClass>
+		<causesNeed>VECMod_Chemical_A_Pholiota</causesNeed>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.047</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+			</li>
+			<li>
+				<label>withdrawal</label>
+				<restFallFactorOffset>0.3</restFallFactorOffset>
+				<socialFightChanceFactor>5.0</socialFightChanceFactor>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.10</offset>
+					</li>
+
+
+				</capMods>
+				<mentalStateGivers>
+					<li>
+						<mentalState>Binging_DrugMajor</mentalState>
+						<mtbDays>80</mtbDays>
+					</li>
+				</mentalStateGivers>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThoughtDef>
+		<defName>VECMod_A_PholiotaWithdrawal</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>VECMod_A_PholiotaAddiction</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<visible>false</visible>
+			</li>
+			<li>
+				<label>pholiota withdrawal</label>
+				<description>Ugh, I'm exhausted. Everything is irritating, my hands won’t stay steady, and my head feels like it’s splitting.</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+
+
+</Defs>

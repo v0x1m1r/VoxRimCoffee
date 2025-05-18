@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+    <ThingCategoryDef>
+      <defName>VCEMod_Drinks</defName>
+      <label>drinks</label>
+      <parent>Foods</parent>
+      <resourceReadoutRoot>false</resourceReadoutRoot>
+      <iconPath>Items/Drinks/RimCoffee/RimCoffeeOverclock/RimCoffeeOverclock_a</iconPath>
+    </ThingCategoryDef>
+
+	
+</Defs>

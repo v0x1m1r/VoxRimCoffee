@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--                                                          -->
+	<!--                      OVERCLOCKED X1                      -->
+	<!--                                                          -->  
+  <RecipeDef>
+    <defName>VECMod_Make_RCO</defName>
+	<label>make RimCoffee™ - Overclock</label>
+	<jobString>Making RimCoffee™ - Overclock</jobString>
+	<effectWorking>Cook</effectWorking>
+	<soundWorking>Recipe_Drug</soundWorking>
+	<workSkill>Cooking</workSkill>
+	<workAmount>400</workAmount>
+	<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<recipeUsers>
+		<li>DrugLab</li>
+	</recipeUsers>
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>VECMod_RawPholiota</li>
+				</thingDefs>
+			</filter>
+			<count>8</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Chemfuel</li>
+				</thingDefs>
+			</filter>
+			<count>1</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>VECMod_RawPholiota</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<products>
+		<VCEMod_RC_Overclock>1</VCEMod_RC_Overclock>
+	</products>
+	<researchPrerequisite>RimCoffeeProduction</researchPrerequisite>
+	<skillRequirements>
+		<Crafting>4</Crafting>
+	</skillRequirements>
+  </RecipeDef>
+  
+  
+  	<!--                                                          -->
+	<!--                      OVERCLOCKED X4                      -->
+	<!--                                                          -->
+  
+  <RecipeDef>
+    <defName>VECMod_Make_RCO4</defName>
+	<label>make RimCoffee™ - Overclock x4</label>
+	<jobString>Making RimCoffee™ - Overclock x4</jobString>
+	<effectWorking>Cook</effectWorking>
+	<soundWorking>Recipe_Drug</soundWorking>
+	<workSkill>Cooking</workSkill>
+	<workAmount>400</workAmount>
+	<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<recipeUsers>
+		<li>DrugLab</li>
+	</recipeUsers>
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>VECMod_RawPholiota</li>
+				</thingDefs>
+			</filter>
+			<count>32</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Chemfuel</li>
+				</thingDefs>
+			</filter>
+			<count>2</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>VECMod_RawPholiota</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<products>
+		<VCEMod_RC_Overclock>4</VCEMod_RC_Overclock>
+	</products>
+	<researchPrerequisite>RimCoffeeProduction</researchPrerequisite>
+	<skillRequirements>
+		<Crafting>4</Crafting>
+	</skillRequirements>
+  </RecipeDef>
+  
+  
+    <!--                                                          -->
+	<!--                        EUREKA X1                         -->
+	<!--                                                          -->
+  <RecipeDef>
+    <defName>VECMod_Make_RCEE</defName>
+	<label>make RimCoffee™ - Eureka Extract</label>
+	<jobString>Making RimCoffee™ - Eureka Extract</jobString>
+	<effectWorking>Cook</effectWorking>
+	<soundWorking>Recipe_Drug</soundWorking>
+	<workSkill>Cooking</workSkill>
+	<workAmount>400</workAmount>
+	<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<recipeUsers>
+		<li>DrugLab</li>
+	</recipeUsers>
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>VECMod_RawPholiota</li>
+				</thingDefs>
+			</filter>
+			<count>10</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Chemfuel</li>
+				</thingDefs>
+			</filter>
+			<count>1</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>VECMod_RawPholiota</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<products>
+		<VCEMod_RC_EurekaExtract>1</VCEMod_RC_EurekaExtract>
+	</products>
+	<researchPrerequisite>RimCoffeeProduction</researchPrerequisite>
+	<skillRequirements>
+		<Crafting>4</Crafting>
+	</skillRequirements>
+  </RecipeDef>	
+	
+	
+	
+	<!--                                                          -->
+	<!--                        EUREKA X4                         -->
+	<!--                                                          -->
+  
+  <RecipeDef>
+    <defName>VECMod_Make_RCEE4</defName>
+	<label>make RimCoffee™ - Eureka Extract x4</label>
+	<jobString>Making RimCoffee™ - Eureka Extract x4</jobString>
+	<effectWorking>Cook</effectWorking>
+	<soundWorking>Recipe_Drug</soundWorking>
+	<workSkill>Cooking</workSkill>
+	<workAmount>1600</workAmount>
+	<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<recipeUsers>
+		<li>DrugLab</li>
+	</recipeUsers>
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>VECMod_RawPholiota</li>
+				</thingDefs>
+			</filter>
+			<count>48</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Chemfuel</li>
+				</thingDefs>
+			</filter>
+			<count>2</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>VECMod_RawPholiota</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<products>
+		<VCEMod_RC_EurekaExtract>4</VCEMod_RC_EurekaExtract>
+	</products>
+	<researchPrerequisite>RimCoffeeProduction</researchPrerequisite>
+	<skillRequirements>
+		<Crafting>4</Crafting>
+	</skillRequirements>
+  </RecipeDef>
+  
+    <!--                                                          -->
+	<!--                        HARMONY X1                        -->
+	<!--                                                          -->
+  <RecipeDef>
+    <defName>VECMod_Make_RCH</defName>
+	<label>make RimCoffee™ - Harmony</label>
+	<jobString>Making RimCoffee™ - Harmony</jobString>
+	<effectWorking>Cook</effectWorking>
+	<soundWorking>Recipe_Drug</soundWorking>
+	<workSkill>Cooking</workSkill>
+	<workAmount>400</workAmount>
+	<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<recipeUsers>
+		<li>DrugLab</li>
+	</recipeUsers>
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>VECMod_RawPholiota</li>
+				</thingDefs>
+			</filter>
+			<count>8</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Chemfuel</li>
+				</thingDefs>
+			</filter>
+			<count>1</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>PsychoidLeaves</li>
+				</thingDefs>
+			</filter>
+			<count>4</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>VECMod_RawPholiota</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<products>
+		<VCEMod_RC_Harmony>1</VCEMod_RC_Harmony>
+	</products>
+	<researchPrerequisite>RimCoffeeProduction</researchPrerequisite>
+	<skillRequirements>
+		<Crafting>4</Crafting>
+	</skillRequirements>
+  </RecipeDef>	
+	
+	
+	
+	<!--                                                          -->
+	<!--                        HARMONY X4                        -->
+	<!--                                                          -->
+  
+  <RecipeDef>
+    <defName>VECMod_Make_RCH4</defName>
+	<label>make RimCoffee™ - Harmony x4</label>
+	<jobString>Making RimCoffee™ - Harmony x4</jobString>
+	<effectWorking>Cook</effectWorking>
+	<soundWorking>Recipe_Drug</soundWorking>
+	<workSkill>Cooking</workSkill>
+	<workAmount>1600</workAmount>
+	<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<recipeUsers>
+		<li>DrugLab</li>
+	</recipeUsers>
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>VECMod_RawPholiota</li>
+				</thingDefs>
+			</filter>
+			<count>32</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Chemfuel</li>
+				</thingDefs>
+			</filter>
+			<count>2</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>PsychoidLeaves</li>
+				</thingDefs>
+			</filter>
+			<count>16</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>VECMod_RawPholiota</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<products>
+		<VCEMod_RC_Harmony>4</VCEMod_RC_Harmony>
+	</products>
+	<researchPrerequisite>RimCoffeeProduction</researchPrerequisite>
+	<skillRequirements>
+		<Crafting>4</Crafting>
+	</skillRequirements>
+	
+	
+  </RecipeDef>
+  
+    <!--                                                          -->
+	<!--                      L4-C-K FURY X1                      -->
+	<!--                                                          -->
+  <RecipeDef>
+    <defName>VECMod_Make_RCL4CKF</defName>
+	<label>make RimCoffee™ - L4-C-K Fury</label>
+	<jobString>Making RimCoffee™ - L4-C-K Fury</jobString>
+	<effectWorking>Cook</effectWorking>
+	<soundWorking>Recipe_Drug</soundWorking>
+	<workSkill>Cooking</workSkill>
+	<workAmount>800</workAmount>
+	<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<recipeUsers>
+		<li>DrugLab</li>
+	</recipeUsers>
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>VECMod_RawPholiota</li>
+				</thingDefs>
+			</filter>
+			<count>16</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Chemfuel</li>
+				</thingDefs>
+			</filter>
+			<count>2</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>MedicineIndustrial</li>
+				</thingDefs>
+			</filter>
+			<count>2</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>VECMod_RawPholiota</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<products>
+		<VCEMod_RC_L4CKF>1</VCEMod_RC_L4CKF>
+	</products>
+	<researchPrerequisite>RimCoffeeCombatProduction</researchPrerequisite>
+	<skillRequirements>
+		<Crafting>6</Crafting>
+	</skillRequirements>
+  </RecipeDef>	
+	
+	
+	
+    <!--                                                          -->
+	<!--                      L4-C-K FURY X4                      -->
+	<!--                                                          -->
+  
+  <RecipeDef>
+    <defName>VECMod_Make_RCL4CKF4</defName>
+	<label>make RimCoffee™ - L4-C-K Fury x4</label>
+	<jobString>Making RimCoffee™ - L4-C-K Fury x4</jobString>
+	<effectWorking>Cook</effectWorking>
+	<soundWorking>Recipe_Drug</soundWorking>
+	<workSkill>Cooking</workSkill>
+	<workAmount>3200</workAmount>
+	<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<recipeUsers>
+		<li>DrugLab</li>
+	</recipeUsers>
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>VECMod_RawPholiota</li>
+				</thingDefs>
+			</filter>
+			<count>64</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Chemfuel</li>
+				</thingDefs>
+			</filter>
+			<count>3</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>MedicineIndustrial</li>
+				</thingDefs>
+			</filter>
+			<count>4</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>VECMod_RawPholiota</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<products>
+		<VCEMod_RC_L4CKF>4</VCEMod_RC_L4CKF>
+	</products>
+	<researchPrerequisite>RimCoffeeCombatProduction</researchPrerequisite>
+	<skillRequirements>
+		<Crafting>6</Crafting>
+	</skillRequirements>
+  </RecipeDef>
+  
+    <!--                                                          -->
+	<!--                   PROTOTYPE W.B-13 X1                    -->
+	<!--                                                          -->
+  <RecipeDef>
+    <defName>VECMod_Make_RCPWB131</defName>
+	<label>make RimCoffee™ - Prototype W.B-13</label>
+	<jobString>Making RimCoffee™ - Prototype W.B-13</jobString>
+	<effectWorking>Cook</effectWorking>
+	<soundWorking>Recipe_Drug</soundWorking>
+	<workSkill>Cooking</workSkill>
+	<workAmount>800</workAmount>
+	<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<recipeUsers>
+		<li>DrugLab</li>
+	</recipeUsers>
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>VECMod_PC13M</li>
+				</thingDefs>
+			</filter>
+			<count>1</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>VCEMod_RC_L4CKF</li>
+				</thingDefs>
+			</filter>
+			<count>1</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>VECMod_RawPholiota</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<products>
+		<VCEMod_RC_WB13A>1</VCEMod_RC_WB13A>
+	</products>
+	<researchPrerequisite>RimCoffeeCombatProduction</researchPrerequisite>
+	<skillRequirements>
+		<Crafting>8</Crafting>
+	</skillRequirements>
+  </RecipeDef>	
+	
+	
+	
+    <!--                                                          -->
+	<!--                   PROTOTYPE W.B-13 X4                    -->
+	<!--                                                          -->
+  
+  <RecipeDef>
+    <defName>VECMod_Make_RCPWB134</defName>
+	<label>make RimCoffee™ - Prototype W.B-13 x4</label>
+	<jobString>Making RimCoffee™ - Prototype W.B-13 x4</jobString>
+	<effectWorking>Cook</effectWorking>
+	<soundWorking>Recipe_Drug</soundWorking>
+	<workSkill>Cooking</workSkill>
+	<workAmount>3200</workAmount>
+	<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<recipeUsers>
+		<li>DrugLab</li>
+	</recipeUsers>
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>VECMod_PC13M</li>
+				</thingDefs>
+			</filter>
+			<count>3</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>VCEMod_RC_L4CKF</li>
+				</thingDefs>
+			</filter>
+			<count>4</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>VECMod_RawPholiota</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<products>
+		<VCEMod_RC_WB13A>4</VCEMod_RC_WB13A>
+	</products>
+	<researchPrerequisite>RimCoffeeCombatProduction</researchPrerequisite>
+	<skillRequirements>
+		<Crafting>12</Crafting>
+	</skillRequirements>
+  </RecipeDef>
+  
+</Defs>

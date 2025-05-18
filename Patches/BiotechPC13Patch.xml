@@ -1,0 +1,13 @@
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+          <mods>
+            <li>Biotech</li>
+          </mods>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="VECMod_PC13M"]/comps/li/explosiveDamageType</xpath>
+            <value>
+                <explosiveDamageType>ToxGas</explosiveDamageType>
+            </value>
+        </match>
+    </Operation>
+</Patch>

@@ -1,0 +1,54 @@
+ <Defs>
+  <ThingDef ParentName="ResourceBase">
+    <defName>VECMod_PC13M</defName>
+    <label>Pholiotox Compound-13</label>
+  <description>DESIGNATION: Pholiotox Compound-13&#10;STATUS: Unstable, Highly Volatile&#10;KNOWN HAZARDS:&#10;Extreme flammability, risk of detonation upon impact, severe acid burns on contact. Prolonged exposure may result in necrosis.&#10;SYNTHESIS:&#10;Derived from Pholiota extract, uranium particulates, and refined chemfuel. The resulting compound exhibits a bioluminescent green glow and requires reinforced containment.&#10;APPLICATION:&#10;Primary ingredient in the experimental combat stimulant RimCoffee™ Prototype W.B-13. When mixed with RimCoffee™ L4-C-K Fury under controlled conditions, it produces a highly potent performance-enhancing formula.&#10;WARNING:&#10;Mishandling may result in spontaneous combustion and catastrophic injury. Field deployment strictly prohibited outside of authorized research zones.</description>
+	<tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Items/Ingredients/PholiotoxCompound13</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.90</drawSize>
+    </graphicData>
+    <uiIconPath>Items/Ingredients/PholiotoxCompound13/PholiotoxCompound13_a</uiIconPath>
+		<uiIconScale>1.4</uiIconScale>
+    <stackLimit>25</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>25</MaxHitPoints>
+      <MarketValue>55</MarketValue>
+      <Mass>0.1</Mass>
+      <Flammability>4</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+	<comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>3</explosiveRadius>
+        <explosiveDamageType>AcidBurn</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+        <startWickOnDamageTaken>
+          <li>Flame</li>
+        </startWickOnDamageTaken>
+        <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+        <preExplosionSpawnThingDef>Filth_SpentAcid</preExplosionSpawnThingDef>
+        <preExplosionSpawnChance>1</preExplosionSpawnChance>
+        <wickTicks>70~350</wickTicks>
+      </li>
+		<li Class="CompProperties_Glower">
+			<glowRadius>3</glowRadius>
+			<glowColor>(124,255,103,0)</glowColor>
+      </li>
+      <li Class="CompProperties_GasOnDamage" MayRequire="Ludeon.Rimworld.Biotech">
+        <type>ToxGas</type>
+        <damageFactor>4</damageFactor>
+        <useStackCountAsFactor>true</useStackCountAsFactor>
+      </li>
+    </comps>
+	<techLevel>Industrial</techLevel>
+  <tradeTags>
+		  <li>ExoticMisc</li>
+	</tradeTags>
+  </ThingDef>
+ </Defs>

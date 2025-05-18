@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- to this day i wonder why i remade coffee, sure its better but like, still find it weird that i thought "ahh yes, i love coffee, lets make it a bit overpowered"              -->
+  <!-- Also why did i choose such a dumb name lmao-->
+  <ThingDef ParentName="RoughPlantBase">
+    <defName>VECMod_RawPholiota</defName>
+	<label>raw Pholiota</label>
+	<description>A freshly harvested form of the Pholiota fungus, Raw Pholiota shouldn't really be eaten in its natural state, containing concentrated compounds that require further refinement. However, when properly processed, it becomes a key component in enhanced coffee, a stimulant known to boost work speed and movement efficiency. While this weaker variant lacks the full potency of BlackWater’s original formula, it remains an essential commodity for those seeking an edge in labor-intensive or high-risk environments.</description>
+	<graphicData>
+		<texPath>Plants/Pholiota/RawPholiota</texPath>
+	</graphicData>
+	<statBases>
+		<MarketValue>1.1</MarketValue>
+		<Flammability>1.3</Flammability>
+	</statBases>
+	<ingestible>
+		<preferability>DesperateOnly</preferability>
+    </ingestible>
+	<comps>
+		<li Class="CompProperties_Rottable">
+			<daysToRotStart>30</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+		</li>
+	</comps>
+	<thingCategories>
+		<li>PlantMatter</li>
+	</thingCategories>
+  </ThingDef>
+
+</Defs>

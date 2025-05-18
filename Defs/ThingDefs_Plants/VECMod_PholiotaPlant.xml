@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--  The magic plant, woooooww -->
+  <ThingDef ParentName="PlantBase" Name="PholiotaBase" Abstract="True">
+    <graphicData>
+      <texPath>Plants/Pholiota/Pholiota</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+	<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.1</Nutrition>
+	</statBases>
+	<selectable>true</selectable>	
+	<pathCost>10</pathCost>
+	<ingestible />
+    <plant>
+		<fertilityMin>1</fertilityMin>
+		<growDays>14</growDays>
+		<dieIfLeafless>true</dieIfLeafless>
+		<harvestTag>Standard</harvestTag>
+		<harvestedThingDef>VECMod_RawPholiota</harvestedThingDef>
+		<harvestYield>25</harvestYield>
+		<sowMinSkill>5</sowMinSkill>
+		<sowTags>
+			<li>Ground</li>
+			<li>Hydroponic</li>
+		</sowTags>
+		<immatureGraphicPath>Plants/Pholiota/ImmaturePholiota</immatureGraphicPath>
+		<topWindExposure>0.1</topWindExposure>
+		<visualSizeRange>0.4~1.3</visualSizeRange>
+		<wildOrder>2</wildOrder>
+    </plant>
+  </ThingDef>
+
+  <!-- Cultivated Pholiota duh -->
+  <ThingDef ParentName="PholiotaBase">
+    <defName>VECMod_Pholiota</defName>
+    <label>Pholiota</label>
+    <description>The freshly harvested form of Pholiota, Raw Pholiota shouldn't be eaten in its natural state, containing compounds that require precise refinement. When processed, it becomes a vital ingredient in enhanced coffee, most commonly found in the RimCoffee recipes, a brew known to increase the efficiency of many work types. Traders often whisper about the original strain being far more potent, but no known records exist of its true source—only fragments of data, erased shipment logs, and the occasional black-market deal gone wrong. While widely available, some shipments bear strange, encrypted markings—sequences of letters and numbers that seem meaningless. Occasionally, fragments of old cargo manifests surface, referencing a now-defunct research division known only as B.L4-C-K.W, though no official records of such an entity exist. Traders who dig too deep often find themselves met with silence… or worse.</description>
+    <plant>
+      <growDays>14</growDays>
+      <sowWork>250</sowWork>
+      <sowMinSkill>6</sowMinSkill>
+      <sowTags>
+		<li>Ground</li>
+		<li>Hydroponic</li>
+      </sowTags>
+      <purpose>Food</purpose>
+    </plant>
+  </ThingDef>
+
+</Defs>
